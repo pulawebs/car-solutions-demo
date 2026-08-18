@@ -1,1 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Car Solutions Botswana | Auto Repair Gaborone</title>
+
+  <meta
+    name="description"
+    content="Car Solutions Botswana — automotive services on Barry Eustice Road, Gaborone."
+  >
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #080808;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      z-index: 1000;
+
+      background: rgba(8, 8, 8, 0.92);
+
+      backdrop-filter: blur(12px);
+
+      border-bottom: 1px solid #222;
+    }
+
+    nav {
+      max-width: 1150px;
+
+      margin: auto;
+
+      padding: 18px 25px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.15rem;
+
+      font-weight: 800;
+
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: #e63946;
+    }
+
+    .nav-links {
+      display: flex;
+
+      align-items: center;
+
+      gap: 30px;
+
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #ccc;
+
+      font-size: .95rem;
+
+      transition: .3s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .nav-button {
+      background: #e63946;
+
+      color: white !important;
+
+      padding: 10px 18px;
+
+      border-radius: 6px;
+
+      font-weight: bold;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+
+      min-height: 100vh;
+
+      display: flex;
+
+      align-items: center;
+
+      padding: 140px 25px 80px;
+
+      background:
+        linear-gradient(
+          rgba(0,0,0,.68),
+          rgba(0,0,0,.92)
+        ),
+        url("https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=1800&q=85")
+        center / cover;
+    }
+
+    .hero-content {
+      max-width: 1150px;
+
+      width: 100%;
+
+      margin: auto;
+    }
+
+    .location-tag {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      padding: 8px 14px;
+
+      border: 1px solid #444;
+
+      border-radius: 50px;
+
+      color: #ddd;
+
+      font-size: .8rem;
+
+      margin-bottom: 25px;
+    }
+
+    .location-dot {
+
+      width: 7px;
+
+      height: 7px;
+
+      background: #e63946;
+
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+
+      max-width: 850px;
+
+      font-size: clamp(
+        3.3rem,
+        8vw,
+        6.5rem
+      );
+
+      line-height: .94;
+
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #e63946;
+    }
+
+    .hero p {
+
+      max-width: 600px;
+
+      color: #ccc;
+
+      font-size: 1.1rem;
+
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 15px;
+    }
+
+    .btn {
+
+      display: inline-block;
+
+      padding: 14px 25px;
+
+      border-radius: 7px;
+
+      font-weight: bold;
+
+      transition: .3s;
+    }
+
+    .btn-primary {
+
+      background: #e63946;
+    }
+
+    .btn-primary:hover {
+
+      background: #ff4b59;
+
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+
+      border: 1px solid #555;
+    }
+
+    .btn-secondary:hover {
+
+      background: white;
+
+      color: black;
+    }
+
+
+    /* =========================
+       GENERAL
+    ========================= */
+
+    section {
+
+      padding: 90px 25px;
+    }
+
+    .container {
+
+      max-width: 1150px;
+
+      margin: auto;
+    }
+
+    .section-label {
+
+      color: #e63946;
+
+      font-size: .8rem;
+
+      font-weight: bold;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+
+      font-size: 2.7rem;
+
+      line-height: 1.1;
+
+      margin-bottom: 15px;
+    }
+
+    .section-description {
+
+      max-width: 650px;
+
+      color: #999;
+
+      margin-bottom: 45px;
+    }
+
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+
+      background: #0d0d0d;
+    }
+
+    .service-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 20px;
+    }
+
+    .service-card {
+
+      background: #151515;
+
+      border: 1px solid #252525;
+
+      border-radius: 10px;
+
+      padding: 30px;
+
+      transition: .3s;
+    }
+
+    .service-card:hover {
+
+      transform: translateY(-6px);
+
+      border-color: #e63946;
+    }
+
+    .service-icon {
+
+      font-size: 2rem;
+
+      margin-bottom: 18px;
+    }
+
+    .service-card h3 {
+
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+
+      color: #999;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 60px;
+
+      align-items: center;
+    }
+
+    .about-image {
+
+      min-height: 450px;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          rgba(0,0,0,.1),
+          rgba(0,0,0,.35)
+        ),
+        url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=85")
+        center / cover;
+    }
+
+    .about-text p {
+
+      color: #aaa;
+
+      margin-bottom: 20px;
+    }
+
+    .facts {
+
+      display: grid;
+
+      gap: 12px;
+
+      margin-top: 30px;
+    }
+
+    .fact {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+      padding: 14px;
+
+      background: #151515;
+
+      border: 1px solid #252525;
+
+      border-radius: 7px;
+    }
+
+    .fact-icon {
+
+      color: #e63946;
+
+      font-size: 1.2rem;
+    }
+
+
+    /* =========================
+       LOCATION
+    ========================= */
+
+    .location {
+
+      background: #0d0d0d;
+    }
+
+    .location-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 25px;
+    }
+
+    .location-card {
+
+      background: #151515;
+
+      border: 1px solid #252525;
+
+      border-radius: 10px;
+
+      padding: 30px;
+    }
+
+    .location-card h3 {
+
+      margin-bottom: 10px;
+    }
+
+    .location-card p {
+
+      color: #999;
+
+      margin-bottom: 20px;
+    }
+
+    .map-button {
+
+      display: inline-block;
+
+      background: #e63946;
+
+      padding: 12px 20px;
+
+      border-radius: 6px;
+
+      font-weight: bold;
+    }
+
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+
+      background: #e63946;
+
+      text-align: center;
+    }
+
+    .cta h2 {
+
+      font-size: 3rem;
+
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+
+      max-width: 600px;
+
+      margin: 0 auto 25px;
+    }
+
+    .cta .btn {
+
+      background: #000;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+
+      background: #080808;
+    }
+
+    .contact-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 50px;
+    }
+
+    .contact-info {
+
+      display: grid;
+
+      gap: 15px;
+    }
+
+    .contact-item {
+
+      background: #151515;
+
+      border: 1px solid #252525;
+
+      border-radius: 8px;
+
+      padding: 22px;
+    }
+
+    .contact-item small {
+
+      display: block;
+
+      color: #e63946;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1px;
+
+      margin-bottom: 5px;
+    }
+
+    .contact-item p {
+
+      color: #ccc;
+    }
+
+    .contact-item a {
+
+      color: white;
+
+      font-weight: bold;
+    }
+
+    .contact-item a:hover {
+
+      color: #e63946;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+
+      padding: 30px 25px;
+
+      text-align: center;
+
+      color: #777;
+
+      border-top: 1px solid #222;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 800px) {
+
+      .nav-links {
+
+        display: none;
+      }
+
+      .service-grid {
+
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid {
+
+        grid-template-columns: 1fr;
+      }
+
+      .location-grid {
+
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+
+        grid-template-columns: 1fr;
+      }
+
+      .about-image {
+
+        min-height: 300px;
+      }
+
+      .hero h1 {
+
+        font-size: 3.6rem;
+      }
+
+      .cta h2 {
+
+        font-size: 2.2rem;
+      }
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
+
+  <header>
+
+    <nav>
+
+      <div class="logo">
+        CAR <span>SOLUTIONS</span>
+      </div>
+
+      <ul class="nav-links">
+
+        <li>
+          <a href="#services">
+            Services
+          </a>
+        </li>
+
+        <li>
+          <a href="#about">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="#location">
+            Location
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#contact"
+            class="nav-button"
+          >
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="location-tag">
+
+        <span class="location-dot"></span>
+
+        Barry Eustice Road • Gaborone
+
+      </div>
+
+
+      <h1>
+
+        Solutions for your
+        <span>vehicle.</span>
+
+      </h1>
+
+
+      <p>
+
+        Car Solutions Botswana is an automotive
+        business based in Gaborone, providing
+        vehicle-related services for local customers.
+
+      </p>
+
+
+      <div class="buttons">
+
+        <a
+          href="tel:+26778200731"
+          class="btn btn-primary"
+        >
+
+          Call Car Solutions
+
+        </a>
+
+
+        <a
+          href="#location"
+          class="btn btn-secondary"
+        >
+
+          Find Us
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       SERVICES
+  ========================= -->
+
+  <section
+    class="services"
+    id="services"
+  >
+
+    <div class="container">
+
+
+      <div class="section-label">
+
+        Automotive Services
+
+      </div>
+
+
+      <h2 class="section-title">
+
+        Here for your vehicle.
+
+      </h2>
+
+
+      <p class="section-description">
+
+        Looking for automotive assistance in Gaborone?
+        Get in touch with Car Solutions Botswana to
+        discuss your vehicle's needs.
+
+      </p>
+
+
+      <div class="service-grid">
+
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            🔧
+          </div>
+
+          <h3>
+            Auto Repair
+          </h3>
+
+          <p>
+
+            Vehicle repair services for customers
+            looking for automotive assistance.
+
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            🚗
+          </div>
+
+          <h3>
+            Vehicle Solutions
+          </h3>
+
+          <p>
+
+            Automotive solutions designed around
+            your vehicle and its needs.
+
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            ✓
+          </div>
+
+          <h3>
+            Local Service
+          </h3>
+
+          <p>
+
+            Conveniently located on Barry Eustice Road
+            in Gaborone.
+
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       ABOUT
+  ========================= -->
+
+  <section id="about">
+
+    <div class="container about-grid">
+
+
+      <div class="about-image"></div>
+
+
+      <div class="about-text">
+
+
+        <div class="section-label">
+
+          About Car Solutions Botswana
+
+        </div>
+
+
+        <h2 class="section-title">
+
+          Your local automotive solution.
+
+        </h2>
+
+
+        <p>
+
+          Car Solutions Botswana is an automotive
+          business located on Barry Eustice Road
+          in Gaborone.
+
+        </p>
+
+
+        <p>
+
+          Whether you're looking for vehicle repair
+          or need assistance with an automotive issue,
+          get in touch directly to discuss your needs.
+
+        </p>
+
+
+        <div class="facts">
+
+
+          <div class="fact">
+
+            <span class="fact-icon">
+              ✓
+            </span>
+
+            <span>
+              Located in Gaborone
+            </span>
+
+          </div>
+
+
+          <div class="fact">
+
+            <span class="fact-icon">
+              ✓
+            </span>
+
+            <span>
+              Automotive service business
+            </span>
+
+          </div>
+
+
+          <div class="fact">
+
+            <span class="fact-icon">
+              ✓
+            </span>
+
+            <span>
+              Easy phone contact
+            </span>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       LOCATION
+  ========================= -->
+
+  <section
+    class="location"
+    id="location"
+  >
+
+    <div class="container">
+
+
+      <div class="section-label">
+
+        Visit Us
+
+      </div>
+
+
+      <h2 class="section-title">
+
+        Find Car Solutions.
+
+      </h2>
+
+
+      <p class="section-description">
+
+        Located on Barry Eustice Road in Gaborone,
+        Botswana.
+
+      </p>
+
+
+      <div class="location-grid">
+
+
+        <div class="location-card">
+
+          <h3>
+            📍 Our Location
+          </h3>
+
+          <p>
+
+            Barry Eustice Rd<br>
+            Gaborone<br>
+            Botswana
+
+          </p>
+
+
+          <a
+            class="map-button"
+            href="https://www.google.com/maps/dir/?api=1&destination=Car+Solutions+Botswana%2C+Barry+Eustice+Rd%2C+Gaborone%2C+Botswana"
+            target="_blank"
+          >
+
+            Get Directions
+
+          </a>
+
+        </div>
+
+
+        <div class="location-card">
+
+          <h3>
+            📞 Contact
+          </h3>
+
+          <p>
+
+            Speak directly with
+            Car Solutions Botswana.
+
+          </p>
+
+
+          <a
+            class="map-button"
+            href="tel:+26778200731"
+          >
+
+            78 200 731
+
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       CTA
+  ========================= -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>
+
+        Need help with your vehicle?
+
+      </h2>
+
+
+      <p>
+
+        Get in touch with Car Solutions Botswana
+        to discuss your automotive needs.
+
+      </p>
+
+
+      <a
+        href="tel:+26778200731"
+        class="btn"
+      >
+
+        Call 78 200 731
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       CONTACT
+  ========================= -->
+
+  <section
+    class="contact"
+    id="contact"
+  >
+
+    <div class="container">
+
+
+      <div class="section-label">
+
+        Contact
+
+      </div>
+
+
+      <h2 class="section-title">
+
+        Get in touch.
+
+      </h2>
+
+
+      <p class="section-description">
+
+        Have a question about your vehicle?
+        Contact Car Solutions Botswana directly.
+
+      </p>
+
+
+      <div class="contact-grid">
+
+
+        <div class="contact-info">
+
+
+          <div class="contact-item">
+
+            <small>
+              Phone
+            </small>
+
+            <a href="tel:+26778200731">
+
+              78 200 731
+
+            </a>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <small>
+              Address
+            </small>
+
+            <p>
+
+              Barry Eustice Rd,
+              Gaborone, Botswana
+
+            </p>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <small>
+              Business Type
+            </small>
+
+            <p>
+
+              Auto Repair Shop
+
+            </p>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="location-card">
+
+          <h3>
+
+            Ready to speak with us?
+
+          </h3>
+
+
+          <p>
+
+            Give Car Solutions Botswana
+            a call to discuss your vehicle
+            requirements.
+
+          </p>
+
+
+          <a
+            href="tel:+26778200731"
+            class="map-button"
+          >
+
+            Call Now
+
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    © 2026 Car Solutions Botswana.
+    All rights reserved.
+
+  </footer>
+
+
+</body>
+
+</html>
