@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Car Solutions Botswana | Gaborone</title>
+  <title>Car Solutions Botswana | Automotive Services</title>
 
   <meta
     name="description"
-    content="Car Solutions Botswana — automotive services in Gaborone."
+    content="Car Solutions Botswana - Automotive services in Gaborone."
   >
 
   <style>
+
     :root {
       --red: #e21d2b;
       --dark: #111111;
@@ -35,7 +36,7 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
-      background: var(--white);
+      background: white;
       line-height: 1.6;
     }
 
@@ -44,14 +45,16 @@
       text-decoration: none;
     }
 
-    button {
-      font: inherit;
+    img {
+      width: 100%;
+      display: block;
     }
 
     .container {
       width: min(1180px, calc(100% - 40px));
       margin: auto;
     }
+
 
     /* =========================
        NAVIGATION
@@ -64,10 +67,10 @@
       width: 100%;
       z-index: 1000;
 
-      background: rgba(255,255,255,.94);
-      backdrop-filter: blur(14px);
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(12px);
 
-      border-bottom: 1px solid rgba(0,0,0,.08);
+      border-bottom: 1px solid #e8e8e8;
     }
 
     .navbar {
@@ -85,12 +88,11 @@
 
       font-size: 17px;
       font-weight: 800;
-      letter-spacing: -.4px;
     }
 
     .brand-mark {
-      width: 34px;
-      height: 34px;
+      width: 35px;
+      height: 35px;
 
       display: grid;
       place-items: center;
@@ -100,7 +102,7 @@
 
       border-radius: 6px;
 
-      font-size: 15px;
+      font-size: 13px;
       font-weight: 900;
     }
 
@@ -120,8 +122,6 @@
       color: #555;
       font-size: 14px;
       font-weight: 600;
-
-      transition: .2s;
     }
 
     .nav a:hover {
@@ -133,6 +133,7 @@
       color: white !important;
 
       padding: 11px 18px;
+
       border-radius: 5px;
     }
 
@@ -140,27 +141,28 @@
       background: var(--red);
     }
 
+
     /* =========================
        HERO
     ========================= */
 
     .hero {
       min-height: 690px;
+
       margin-top: 74px;
 
       display: flex;
       align-items: center;
 
-      position: relative;
-
       background:
         linear-gradient(
           90deg,
-          rgba(0,0,0,.82) 0%,
-          rgba(0,0,0,.57) 45%,
-          rgba(0,0,0,.18) 100%
+          rgba(0,0,0,.82),
+          rgba(0,0,0,.45),
+          rgba(0,0,0,.15)
         ),
-        url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2200&q=90")
+
+        url("https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=2200&q=90")
         center / cover;
     }
 
@@ -174,14 +176,16 @@
       align-items: center;
       gap: 8px;
 
+      border: 1px solid rgba(255,255,255,.3);
+
       padding: 7px 12px;
 
-      border: 1px solid rgba(255,255,255,.3);
       border-radius: 50px;
 
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .8px;
+      font-size: 11px;
+      font-weight: 800;
+
+      letter-spacing: 1px;
 
       margin-bottom: 22px;
     }
@@ -191,18 +195,20 @@
       height: 7px;
 
       background: var(--red);
+
       border-radius: 50%;
     }
 
     .hero h1 {
-      max-width: 760px;
+      max-width: 750px;
 
-      font-size: clamp(3.4rem, 7vw, 6.6rem);
+      font-size: clamp(3.4rem, 7vw, 6.5rem);
+
       line-height: .91;
 
       letter-spacing: -5px;
 
-      margin-bottom: 26px;
+      margin-bottom: 25px;
     }
 
     .hero h1 span {
@@ -246,26 +252,29 @@
     }
 
     .btn-red:hover {
-      background: #bd1723;
+      background: #bc1722;
       transform: translateY(-2px);
     }
 
-    .btn-light {
+    .btn-white {
       background: white;
       color: var(--dark);
     }
 
-    .btn-light:hover {
+    .btn-white:hover {
       background: #eeeeee;
     }
 
+
     /* =========================
-       INFO BAR
+       INFORMATION BAR
     ========================= */
 
     .info-wrapper {
       position: relative;
+
       margin-top: -45px;
+
       z-index: 5;
     }
 
@@ -273,18 +282,23 @@
       background: white;
 
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
 
       border: 1px solid var(--border);
+
       border-radius: 7px;
 
-      box-shadow: 0 18px 50px rgba(0,0,0,.09);
+      box-shadow:
+        0 18px 50px rgba(0,0,0,.09);
 
       overflow: hidden;
     }
 
     .info-item {
       padding: 23px 25px;
+
       border-right: 1px solid var(--border);
     }
 
@@ -298,9 +312,10 @@
       color: #999;
 
       font-size: 10px;
-      font-weight: 800;
+      font-weight: 900;
 
       letter-spacing: 1.4px;
+
       text-transform: uppercase;
 
       margin-bottom: 4px;
@@ -311,8 +326,9 @@
       font-weight: 700;
     }
 
+
     /* =========================
-       SECTION BASICS
+       GENERAL SECTIONS
     ========================= */
 
     section {
@@ -321,7 +337,9 @@
 
     .section-top {
       display: flex;
+
       align-items: end;
+
       justify-content: space-between;
 
       gap: 30px;
@@ -333,9 +351,11 @@
       color: var(--red);
 
       font-size: 11px;
+
       font-weight: 900;
 
       letter-spacing: 2px;
+
       text-transform: uppercase;
 
       margin-bottom: 9px;
@@ -344,7 +364,11 @@
     .section-title {
       max-width: 650px;
 
-      font-size: clamp(2.3rem, 4vw, 3.7rem);
+      font-size: clamp(
+        2.3rem,
+        4vw,
+        3.7rem
+      );
 
       line-height: 1;
 
@@ -359,6 +383,7 @@
       font-size: 15px;
     }
 
+
     /* =========================
        SERVICES
     ========================= */
@@ -369,7 +394,10 @@
 
     .service-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 18px;
     }
 
@@ -377,6 +405,7 @@
       background: white;
 
       border: 1px solid var(--border);
+
       border-radius: 7px;
 
       overflow: hidden;
@@ -386,13 +415,16 @@
 
     .service:hover {
       transform: translateY(-5px);
-      box-shadow: 0 18px 40px rgba(0,0,0,.08);
+
+      box-shadow:
+        0 18px 40px rgba(0,0,0,.08);
     }
 
     .service-image {
       height: 220px;
 
       background-position: center;
+
       background-size: cover;
     }
 
@@ -401,12 +433,12 @@
         url("https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1100&q=85");
     }
 
-    .image-car {
+    .image-diagnostics {
       background-image:
-        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1100&q=85");
+        url("https://images.unsplash.com/photo-1504222490345-c075b6008014?auto=format&fit=crop&w=1100&q=85");
     }
 
-    .image-workshop {
+    .image-maintenance {
       background-image:
         url("https://images.unsplash.com/photo-1632823471565-1ecdf5c7f7b4?auto=format&fit=crop&w=1100&q=85");
     }
@@ -419,6 +451,7 @@
       color: var(--red);
 
       font-size: 11px;
+
       font-weight: 900;
 
       margin-bottom: 10px;
@@ -426,13 +459,16 @@
 
     .service h3 {
       font-size: 20px;
+
       margin-bottom: 8px;
     }
 
     .service p {
       color: var(--muted);
+
       font-size: 14px;
     }
+
 
     /* =========================
        ABOUT
@@ -441,7 +477,8 @@
     .about-grid {
       display: grid;
 
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns:
+        1fr 1fr;
 
       gap: 75px;
 
@@ -454,12 +491,16 @@
       border-radius: 7px;
 
       background:
-        url("https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1300&q=90")
+        url("https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=1300&q=90")
         center / cover;
     }
 
     .about-content h2 {
-      font-size: clamp(2.4rem, 4vw, 3.8rem);
+      font-size: clamp(
+        2.4rem,
+        4vw,
+        3.8rem
+      );
 
       line-height: 1;
 
@@ -478,6 +519,7 @@
 
     .features {
       display: grid;
+
       gap: 12px;
 
       margin-top: 30px;
@@ -485,10 +527,13 @@
 
     .feature {
       display: flex;
+
       align-items: center;
+
       gap: 13px;
 
       font-size: 14px;
+
       font-weight: 700;
     }
 
@@ -497,99 +542,146 @@
       height: 26px;
 
       display: grid;
+
       place-items: center;
 
       border-radius: 50%;
 
       background: #ffe8e9;
+
       color: var(--red);
 
       font-size: 12px;
+
       font-weight: 900;
     }
 
+
     /* =========================
-       VEHICLE SHOWCASE
+       LOCAL VEHICLES
     ========================= */
 
-    .showcase {
+    .vehicles {
       background: var(--dark);
+
       color: white;
     }
 
-    .showcase .section-copy {
+    .vehicles .section-copy {
       color: #aaa;
     }
 
-    .showcase-grid {
+    .vehicle-grid {
       display: grid;
 
-      grid-template-columns: 1.4fr .6fr;
+      grid-template-columns:
+        repeat(3, 1fr);
 
-      gap: 18px;
+      gap: 16px;
     }
 
-    .showcase-card {
-      min-height: 450px;
-
+    .vehicle-card {
       position: relative;
+
+      min-height: 330px;
 
       border-radius: 7px;
 
       overflow: hidden;
 
-      background-size: cover;
       background-position: center;
+
+      background-size: cover;
+
+      transition: .3s;
     }
 
-    .showcase-main {
+    .vehicle-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Toyota Hilux */
+
+    .hilux {
       background-image:
-        url("https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1500&q=90");
+        url("https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1100&q=90");
     }
 
-    .showcase-side {
+    /* Nissan pickup */
+
+    .np300 {
       background-image:
-        url("https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=90");
+        url("https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1100&q=90");
     }
 
-    .showcase-overlay {
+    /* Isuzu / pickup */
+
+    .isuzu {
+      background-image:
+        url("https://images.unsplash.com/photo-1605893477799-b99e3b8b93fe?auto=format&fit=crop&w=1100&q=90");
+    }
+
+    /* Ford Ranger */
+
+    .ranger {
+      background-image:
+        url("https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1100&q=90");
+    }
+
+    /* Mazda */
+
+    .mazda {
+      background-image:
+        url("https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1100&q=90");
+    }
+
+    /* Honda */
+
+    .honda {
+      background-image:
+        url("https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1100&q=90");
+    }
+
+    .vehicle-overlay {
       position: absolute;
+
       inset: 0;
 
       display: flex;
+
       align-items: end;
 
-      padding: 28px;
+      padding: 23px;
 
       background:
         linear-gradient(
-          transparent 35%,
-          rgba(0,0,0,.82)
+          transparent 30%,
+          rgba(0,0,0,.85)
         );
     }
 
-    .showcase-overlay h3 {
-      font-size: 24px;
-      margin-bottom: 4px;
+    .vehicle-info h3 {
+      font-size: 21px;
+
+      margin-bottom: 2px;
     }
 
-    .showcase-overlay p {
-      color: #ddd;
-      font-size: 13px;
+    .vehicle-info p {
+      color: #ccc;
+
+      font-size: 12px;
     }
+
 
     /* =========================
-       CONTACT / LOCATION
+       CONTACT
     ========================= */
-
-    .contact {
-      background: white;
-    }
 
     .contact-grid {
       display: grid;
 
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns:
+        1fr 1fr;
 
       gap: 18px;
     }
@@ -602,24 +694,29 @@
       padding: 35px;
     }
 
-    .contact-card-dark {
+    .contact-dark {
       background: var(--dark);
+
       color: white;
+
       border-color: var(--dark);
     }
 
     .contact-card h3 {
       font-size: 24px;
+
       margin-bottom: 9px;
     }
 
     .contact-card p {
       color: var(--muted);
+
       margin-bottom: 25px;
+
       font-size: 14px;
     }
 
-    .contact-card-dark p {
+    .contact-dark p {
       color: #aaa;
     }
 
@@ -629,7 +726,7 @@
       border-top: 1px solid var(--border);
     }
 
-    .contact-card-dark .contact-detail {
+    .contact-dark .contact-detail {
       border-color: #292929;
     }
 
@@ -639,9 +736,11 @@
       color: #999;
 
       font-size: 10px;
+
       font-weight: 900;
 
       letter-spacing: 1.3px;
+
       text-transform: uppercase;
 
       margin-bottom: 3px;
@@ -650,6 +749,7 @@
     .contact-detail strong {
       font-size: 15px;
     }
+
 
     /* =========================
        FINAL CTA
@@ -666,7 +766,11 @@
     }
 
     .final-cta h2 {
-      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-size: clamp(
+        2.5rem,
+        5vw,
+        4.5rem
+      );
 
       line-height: .95;
 
@@ -683,8 +787,10 @@
 
     .final-cta .btn {
       background: white;
+
       color: var(--dark);
     }
+
 
     /* =========================
        FOOTER
@@ -692,6 +798,7 @@
 
     footer {
       background: #0d0d0d;
+
       color: #888;
 
       padding: 30px 0;
@@ -701,6 +808,7 @@
       display: flex;
 
       align-items: center;
+
       justify-content: space-between;
 
       gap: 20px;
@@ -712,17 +820,22 @@
 
     .footer-brand {
       color: white;
+
       font-weight: 800;
     }
+
 
     /* =========================
        MOBILE
     ========================= */
 
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
 
       .container {
-        width: min(100% - 30px, 1180px);
+        width: min(
+          100% - 30px,
+          1180px
+        );
       }
 
       .nav {
@@ -743,7 +856,9 @@
 
       .info-item {
         border-right: none;
-        border-bottom: 1px solid var(--border);
+
+        border-bottom:
+          1px solid var(--border);
       }
 
       .info-item:last-child {
@@ -768,6 +883,7 @@
 
       .about-grid {
         grid-template-columns: 1fr;
+
         gap: 35px;
       }
 
@@ -775,12 +891,13 @@
         min-height: 350px;
       }
 
-      .showcase-grid {
-        grid-template-columns: 1fr;
+      .vehicle-grid {
+        grid-template-columns:
+          1fr 1fr;
       }
 
-      .showcase-card {
-        min-height: 350px;
+      .vehicle-card {
+        min-height: 270px;
       }
 
       .contact-grid {
@@ -789,44 +906,92 @@
 
       .footer-content {
         flex-direction: column;
+
         align-items: flex-start;
       }
     }
+
+    @media (max-width: 520px) {
+
+      .vehicle-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .vehicle-card {
+        min-height: 330px;
+      }
+
+    }
+
   </style>
 </head>
 
+
 <body>
+
 
   <!-- =========================
        NAVIGATION
   ========================= -->
 
   <header>
+
     <div class="container navbar">
 
       <a href="#" class="brand">
-        <div class="brand-mark">CS</div>
+
+        <div class="brand-mark">
+          CS
+        </div>
+
         CAR <span>SOLUTIONS</span>
+
       </a>
 
+
       <ul class="nav">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#vehicles">Vehicles</a></li>
-        <li><a href="#contact">Contact</a></li>
 
         <li>
+          <a href="#services">
+            Services
+          </a>
+        </li>
+
+        <li>
+          <a href="#about">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="#vehicles">
+            Vehicles
+          </a>
+        </li>
+
+        <li>
+          <a href="#contact">
+            Contact
+          </a>
+        </li>
+
+        <li>
+
           <a
             href="tel:+26778200731"
             class="nav-call"
           >
             Call Us
           </a>
+
         </li>
+
       </ul>
 
     </div>
+
   </header>
+
 
 
   <!-- =========================
@@ -840,21 +1005,31 @@
       <div class="container hero-content">
 
         <div class="hero-location">
+
           <span class="red-dot"></span>
+
           GABORONE • BOTSWANA
+
         </div>
 
+
         <h1>
-          Keeping your
-          <span>vehicle</span>
-          moving.
+
+          Automotive
+          <span>solutions</span>
+          you can trust.
+
         </h1>
 
+
         <p class="hero-description">
-          Car Solutions Botswana is an automotive
-          business based on Barry Eustice Road,
-          Gaborone.
+
+          Car Solutions Botswana provides
+          automotive services for drivers
+          in Gaborone and surrounding areas.
+
         </p>
+
 
         <div class="hero-buttons">
 
@@ -867,9 +1042,9 @@
 
           <a
             href="#services"
-            class="btn btn-light"
+            class="btn btn-white"
           >
-            View Services
+            Explore Services
           </a>
 
         </div>
@@ -877,6 +1052,7 @@
       </div>
 
     </section>
+
 
 
     <!-- =========================
@@ -888,29 +1064,47 @@
       <div class="info-bar">
 
         <div class="info-item">
-          <span class="info-label">Location</span>
+
+          <span class="info-label">
+            Location
+          </span>
+
           <span class="info-value">
             Barry Eustice Rd, Gaborone
           </span>
+
         </div>
 
+
         <div class="info-item">
-          <span class="info-label">Business</span>
+
+          <span class="info-label">
+            Business
+          </span>
+
           <span class="info-value">
             Automotive Services
           </span>
+
         </div>
 
+
         <div class="info-item">
-          <span class="info-label">Phone</span>
+
+          <span class="info-label">
+            Phone
+          </span>
+
           <span class="info-value">
             78 200 731
           </span>
+
         </div>
 
       </div>
 
     </div>
+
 
 
     <!-- =========================
@@ -927,30 +1121,39 @@
         <div class="section-top">
 
           <div>
+
             <div class="eyebrow">
               What We Do
             </div>
 
             <h2 class="section-title">
-              Automotive solutions,
-              made simple.
+              Automotive care,
+              without the hassle.
             </h2>
+
           </div>
 
+
           <p class="section-copy">
-            A clean online space for customers to
-            discover Car Solutions and get in touch
-            about their vehicle.
+
+            A straightforward place for
+            customers to discover your services
+            and contact the business.
+
           </p>
 
         </div>
 
 
+
         <div class="service-grid">
+
 
           <article class="service">
 
-            <div class="service-image image-repair"></div>
+            <div
+              class="service-image image-repair"
+            ></div>
 
             <div class="service-body">
 
@@ -963,7 +1166,7 @@
               </h3>
 
               <p>
-                Automotive repair and vehicle-related
+                Vehicle repair and automotive
                 services for customers in Gaborone.
               </p>
 
@@ -972,9 +1175,12 @@
           </article>
 
 
+
           <article class="service">
 
-            <div class="service-image image-car"></div>
+            <div
+              class="service-image image-diagnostics"
+            ></div>
 
             <div class="service-body">
 
@@ -983,12 +1189,12 @@
               </div>
 
               <h3>
-                Vehicle Solutions
+                Vehicle Diagnostics
               </h3>
 
               <p>
-                Professional assistance for your
-                vehicle's needs.
+                Professional automotive assistance
+                for your vehicle.
               </p>
 
             </div>
@@ -996,9 +1202,12 @@
           </article>
 
 
+
           <article class="service">
 
-            <div class="service-image image-workshop"></div>
+            <div
+              class="service-image image-maintenance"
+            ></div>
 
             <div class="service-body">
 
@@ -1007,23 +1216,25 @@
               </div>
 
               <h3>
-                Automotive Support
+                Vehicle Maintenance
               </h3>
 
               <p>
-                Contact the team to discuss the right
-                solution for your vehicle.
+                Helping customers keep their
+                vehicles running reliably.
               </p>
 
             </div>
 
           </article>
 
+
         </div>
 
       </div>
 
     </section>
+
 
 
     <!-- =========================
@@ -1034,7 +1245,9 @@
 
       <div class="container about-grid">
 
+
         <div class="about-photo"></div>
+
 
         <div class="about-content">
 
@@ -1042,38 +1255,60 @@
             About Car Solutions
           </div>
 
+
           <h2>
-            A local name for your automotive needs.
+            A local automotive
+            solution.
           </h2>
 
-          <p>
-            Car Solutions Botswana is an automotive
-            business located on Barry Eustice Road
-            in Gaborone.
-          </p>
 
           <p>
-            This website gives customers a simple way
-            to learn about the business, find its
-            location and contact the team directly.
+            Car Solutions Botswana is an
+            automotive business based on
+            Barry Eustice Road in Gaborone.
+          </p>
+
+
+          <p>
+            This demo website gives customers
+            an easy way to understand the
+            business, explore services and
+            contact the team.
           </p>
 
 
           <div class="features">
 
             <div class="feature">
-              <span class="feature-icon">✓</span>
+
+              <span class="feature-icon">
+                ✓
+              </span>
+
               Gaborone based
+
             </div>
 
+
             <div class="feature">
-              <span class="feature-icon">✓</span>
+
+              <span class="feature-icon">
+                ✓
+              </span>
+
               Automotive focused
+
             </div>
 
+
             <div class="feature">
-              <span class="feature-icon">✓</span>
+
+              <span class="feature-icon">
+                ✓
+              </span>
+
               Direct customer contact
+
             </div>
 
           </div>
@@ -1083,6 +1318,7 @@
       </div>
 
     </section>
+
 
 
     <!-- =========================
@@ -1090,48 +1326,61 @@
     ========================= -->
 
     <section
-      class="showcase"
+      class="vehicles"
       id="vehicles"
     >
 
       <div class="container">
 
+
         <div class="section-top">
 
           <div>
+
             <div class="eyebrow">
-              Car Solutions
+              Vehicles
             </div>
 
             <h2 class="section-title">
-              Your vehicle deserves
-              proper attention.
+              Built around the
+              vehicles Botswana drives.
             </h2>
+
           </div>
 
+
           <p class="section-copy">
-            Use this space on the final website for
-            real photos of the workshop, vehicles
-            and completed work.
+
+            These vehicles are used as
+            demonstration imagery. For the
+            final website, replace them with
+            Car Solutions' own photographs.
+
           </p>
 
         </div>
 
 
-        <div class="showcase-grid">
 
-          <div class="showcase-card showcase-main">
+        <div class="vehicle-grid">
 
-            <div class="showcase-overlay">
 
-              <div>
+          <!-- TOYOTA HILUX -->
+
+          <div class="vehicle-card hilux">
+
+            <div class="vehicle-overlay">
+
+              <div class="vehicle-info">
+
                 <h3>
-                  Vehicle Care
+                  Toyota Hilux
                 </h3>
 
                 <p>
-                  Professional automotive solutions.
+                  Reliable • Rugged • Popular
                 </p>
+
               </div>
 
             </div>
@@ -1139,29 +1388,132 @@
           </div>
 
 
-          <div class="showcase-card showcase-side">
 
-            <div class="showcase-overlay">
+          <!-- NISSAN NP300 -->
 
-              <div>
+          <div class="vehicle-card np300">
+
+            <div class="vehicle-overlay">
+
+              <div class="vehicle-info">
+
                 <h3>
-                  Car Solutions
+                  Nissan NP300
                 </h3>
 
                 <p>
-                  Gaborone, Botswana.
+                  Practical • Affordable • Tough
                 </p>
+
               </div>
 
             </div>
 
           </div>
+
+
+
+          <!-- ISUZU -->
+
+          <div class="vehicle-card isuzu">
+
+            <div class="vehicle-overlay">
+
+              <div class="vehicle-info">
+
+                <h3>
+                  Isuzu KB
+                </h3>
+
+                <p>
+                  Durable • Hardworking • Trusted
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- FORD RANGER -->
+
+          <div class="vehicle-card ranger">
+
+            <div class="vehicle-overlay">
+
+              <div class="vehicle-info">
+
+                <h3>
+                  Ford Ranger
+                </h3>
+
+                <p>
+                  Tough • Modern • Capable
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- MAZDA -->
+
+          <div class="vehicle-card mazda">
+
+            <div class="vehicle-overlay">
+
+              <div class="vehicle-info">
+
+                <h3>
+                  Mazda CX Series
+                </h3>
+
+                <p>
+                  Practical • Comfortable • Efficient
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- HONDA -->
+
+          <div class="vehicle-card honda">
+
+            <div class="vehicle-overlay">
+
+              <div class="vehicle-info">
+
+                <h3>
+                  Honda Fit / CR-V
+                </h3>
+
+                <p>
+                  Reliable • Efficient • Urban
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
 
         </div>
 
       </div>
 
     </section>
+
 
 
     <!-- =========================
@@ -1175,6 +1527,7 @@
 
       <div class="container">
 
+
         <div class="section-top">
 
           <div>
@@ -1184,18 +1537,22 @@
             </div>
 
             <h2 class="section-title">
-              Let's talk about
-              your vehicle.
+              Need help with
+              your vehicle?
             </h2>
 
           </div>
 
+
           <p class="section-copy">
-            Get directions or contact Car Solutions
-            Botswana directly.
+
+            Find the business or contact
+            Car Solutions Botswana directly.
+
           </p>
 
         </div>
+
 
 
         <div class="contact-grid">
@@ -1204,12 +1561,12 @@
           <div class="contact-card">
 
             <h3>
-              Visit Us
+              Visit Car Solutions
             </h3>
 
             <p>
-              Find Car Solutions Botswana on
-              Barry Eustice Road in Gaborone.
+              Located on Barry Eustice Road
+              in Gaborone, Botswana.
             </p>
 
 
@@ -1230,17 +1587,18 @@
             <div class="contact-detail">
 
               <small>
-                Business
+                Phone
               </small>
 
               <strong>
-                Auto Repair Shop
+                78 200 731
               </strong>
 
             </div>
 
 
             <br>
+
 
             <a
               href="https://www.google.com/maps/dir/?api=1&destination=Car+Solutions+Botswana%2C+Barry+Eustice+Rd%2C+Gaborone%2C+Botswana"
@@ -1253,22 +1611,23 @@
           </div>
 
 
-          <div class="contact-card contact-card-dark">
+
+          <div class="contact-card contact-dark">
 
             <h3>
-              Need assistance?
+              Speak with the team.
             </h3>
 
             <p>
-              Speak directly with Car Solutions
-              Botswana about your vehicle.
+              Contact Car Solutions Botswana
+              about your vehicle.
             </p>
 
 
             <div class="contact-detail">
 
               <small>
-                Phone
+                Call
               </small>
 
               <strong>
@@ -1293,11 +1652,12 @@
 
             <br>
 
+
             <a
               href="tel:+26778200731"
               class="btn btn-red"
             >
-              Call Car Solutions
+              Call Now
             </a>
 
           </div>
@@ -1308,6 +1668,7 @@
       </div>
 
     </section>
+
 
 
     <!-- =========================
@@ -1327,6 +1688,7 @@
           Contact Car Solutions Botswana today.
         </p>
 
+
         <a
           href="tel:+26778200731"
           class="btn"
@@ -1338,32 +1700,35 @@
 
     </section>
 
+
   </main>
+
 
 
   <!-- =========================
        FOOTER
-  ========================= -->
+    ========================= -->
 
-  <footer>
+    <footer>
 
-    <div class="container footer-content">
+      <div class="container footer-content">
 
-      <div class="footer-brand">
-        CAR SOLUTIONS BOTSWANA
+        <div class="footer-brand">
+          CAR SOLUTIONS BOTSWANA
+        </div>
+
+        <div>
+          Barry Eustice Rd, Gaborone
+        </div>
+
+        <div>
+          © 2026 Car Solutions Botswana
+        </div>
+
       </div>
 
-      <div>
-        Barry Eustice Rd, Gaborone
-      </div>
+    </footer>
 
-      <div>
-        © 2026 Car Solutions Botswana
-      </div>
-
-    </div>
-
-  </footer>
 
 </body>
 </html>
